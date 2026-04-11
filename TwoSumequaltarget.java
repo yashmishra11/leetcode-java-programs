@@ -3,7 +3,7 @@ import java.util.*;
 public class TwoSumequaltarget {
 
     public static int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();//hashmap stores key->value
+        Map<Integer, Integer> map = new HashMap<>();//hashmap store key->value
 
         for (int i = 0; i < nums.length; i++) {
             int need = target - nums[i];
