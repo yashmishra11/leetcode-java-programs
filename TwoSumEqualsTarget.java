@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class TwoSumequaltarget {
+public class TwoSumEqualsTarget {
 
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();//hashmap store key->value
