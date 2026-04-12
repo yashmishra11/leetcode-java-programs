@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Sumofalldigits { // of an integer (1+2+3 = 6)
+public class SumofAllDigits { // of an integer (1+2+3 = 6)
     public static void main(String[] args) {
         int number;
         System.out.println("enter the number:");
