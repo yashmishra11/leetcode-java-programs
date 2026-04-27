@@ -18,4 +18,3 @@ public class PalindromeNums {
             System.out.println("number is not palindrome");
     }
 }
-
