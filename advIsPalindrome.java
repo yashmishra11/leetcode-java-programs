@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Solution {
-    public static boolean isPalindrome(String s) {
+    public static boolean advIsPalindrome(String s) {
         int left = 0;
         int right = s.length() - 1;
 
@@ -25,7 +25,7 @@ class Solution {
         System.out.print("Enter a string: ");
         String input = sc.nextLine();
 
-        if (isPalindrome(input)) {
+        if (advIsPalindrome(input)) {
             System.out.println("Palindrome");
         } else {
             System.out.println("Not a Palindrome");
