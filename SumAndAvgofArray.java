@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Sumandavgofarray {
+public class SumAndAvgofArray {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
