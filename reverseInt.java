@@ -5,7 +5,7 @@ class Solution {
         while (x != 0){
             int digit = x % 10;
 
-            if (x > Integer.MAX_VALUE/10 || x < Integer.MIN_VALUE)
+            if (rev > Integer.MAX_VALUE/10 || rev < Integer.MIN_VALUE/ 10)
             return 0;
 
             rev = rev*10 + digit;
