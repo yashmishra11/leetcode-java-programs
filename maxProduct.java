@@ -1,19 +1,15 @@
 class Solution {
-    public int maxProduct(int n) {
-        int first = 0;
-        int sec = 0;
+    public int maxProduct(int[] nums) {
+        int max1 = 0, max2 = 0;
 
-        while (n>0){
-            int digit = n%10;
-
-            if (digit >= first){
-                sec = first;
-                first = digit;
-            }else if (digit > sec){
-                sec = digit;
+        for (int x : nums) {
+            if (x >= max1) {
+                max2 = max1;
+                max1 = x;
+            }else if (x > max2) {
+                max2 = x;
             }
-            n /= 10; 
         }
-        return first*sec; 
+        return (max1 -1)* (max2 - 1);
     }
 }
