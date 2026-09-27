@@ -1,20 +1,23 @@
 class Solution {
-    int l, r;
-    public String longestPalindrome(String s) {
-        for (int i = 0; i < s.length(); i++){
-            expand(s, i, i);
-            expand(s, i, i+1);
-        }     
-        return s.substring(l, r+1);
-    }
-    void expand(String s, int a, int b){
-        while (a >= 0 && b<s.length() && s.charAt(a) == s.charAt(b)){
-            a--;
-            b++;
+    public int longestPalindrome(String s) {
+        int[] count = new int [128];
+
+        for (char c : s.toCharArray()){
+            count[c]++;
         }
-        if (b-a-1>r-l+1){
-            l = a+1;
-            r  = b-1;
+        int length = 0;
+        boolean hasOdd = false;
+
+        for (int i = 0; i < 128; i++){
+            length += (count[i]/2)* 2;
+
+            if (count[i]%2 == 1){
+                hasOdd = true;
+            }
         }
+        if (hasOdd){
+            length++;
+        }
+        return length; 
     }
 }
